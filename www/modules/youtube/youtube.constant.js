@@ -4,7 +4,7 @@
   var CONST_YOUTUBE = {
     API_SEARCH: 'https://www.googleapis.com/youtube/v3/search',
     DEFAULT_PARAMS: {
-      key: 'AIzaSyBhW6E5oc3WAkNile5IC8BQlc9Ml6GYecw',
+      key: '<your api key>',
       type: 'video',
       maxResults: '10',
       part: 'id,snippet',
