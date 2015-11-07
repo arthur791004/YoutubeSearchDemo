@@ -1,0 +1,28 @@
+<ion-view title="Youtube Search Demo">
+  <ion-header-bar class="bar bar-subheader item-input-inset">
+    <label class="item-input-wrapper">
+      <input type="search" ng-model="viewModel.searchVideo.szText" placeholder="{{ ::'KEYWORD' | translate }}">
+      <i class="icon placeholder-icon" style="padding-right: 10px"
+        ng-class="viewModel.isAndroid ? 'ion-android-close' : 'ion-ios-close'"
+        ng-if="viewModel.searchVideo.szText.length"
+        on-tap="viewModel.clearSearchText()" >
+      </i>
+    </label>
+    <button class="button button-clear button-icon ion-search" ng-click="viewModel.searchVideo()">
+      {{ ::'SEARCH' | translate }}
+    </button>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list card" collection-repeat="video in viewModel.listVideos track by $index">
+      <div class="item item-text-wrap">
+        <h2>{{ video.snippet.title }}</h2>
+        <p>{{ video.snippet.publishedAt | limitTo: 10 }}</p>
+      </div>
+      <div class="item item-image">
+        <div class="embed-responsive embed-responsive-16by9">
+          <youtube-video class="embed-responsive-item" video-id="video.id.videoId"></youtube-video>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

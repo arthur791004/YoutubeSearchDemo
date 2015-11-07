@@ -1,0 +1,11 @@
+{
+  "name": "YoutubeSearch",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#master"
+  },
+  "dependencies": {
+    "angular-translate": "~2.8.1",
+    "angular-youtube-mb": "~1.1.1"
+  }
+}
