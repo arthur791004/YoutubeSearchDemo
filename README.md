@@ -17,6 +17,7 @@ $ ionic serve --lab
 ## Build Android APK
 ```shell
 $ ionic platform add android
+$ ionic resources --icon && ionic resources --splash
 $ ionic build
 ```
 
