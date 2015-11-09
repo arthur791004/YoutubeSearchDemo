@@ -3,13 +3,14 @@ youtube search demo using ionic
 
 ## Installation
 ```shell
-$ bower install && npm install
+$ bower install
 ```
 ## Bower Plugins
 * angular-youtube-mb
 * angular-translate
 
 ## Usage
+set up API_KEY in www/modules/youtube/youtube.constant.js
 ```shell
 $ ionic serve --lab
 ```
